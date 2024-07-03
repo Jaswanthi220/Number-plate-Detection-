@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>License Plate Detection Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>License Plate Detection Result</h1>
+        <p><strong>Detected Text:</strong> {{ detected_text }}</p>
+        <div class="result">
+            <img src="{{ url_for('static', filename='detected_plate.png') }}" alt="Detected License Plate">
+        </div>
+        <br>
+        <a href="/">Upload another image</a>
+    </div>
+</body>
+</html>
